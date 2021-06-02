@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>demoapp</groupId>
+  <artifactId>demoapp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>15</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+    <groupId>de.taimos</groupId>
+    <artifactId>totp</artifactId>
+    <version>1.0</version>
+</dependency>
+
+<dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.18</version>
+    </dependency>
+
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.10</version>
+</dependency>
+
+<dependency>
+    <groupId>com.duosecurity</groupId>
+    <artifactId>duo-universal-sdk</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.4.0-b180830.0359</version>
+</dependency>
+
+
+<dependency>
+    <groupId>com.google.zxing</groupId>
+    <artifactId>javase</artifactId>
+    <version>3.2.1</version>
+</dependency>
+</dependencies>
+</project>
